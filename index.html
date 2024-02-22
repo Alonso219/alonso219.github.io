@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head >
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frase motivadora del día</title>
+<script>
+window.onload = function() {
+  var frases = [
+    
+
+    "El éxito no es definitivo, el fracaso no es fatal: es el coraje para continuar lo que cuenta. - Winston Churchill",
+    "El único modo de hacer un gran trabajo es amar lo que haces. - Steve Jobs",
+    "No te preocupes por los fracasos, preocúpate por las oportunidades que pierdes cuando ni siquiera lo intentas. - Jack Canfield",
+    "La felicidad no es algo listo. Viene de tus propias acciones. - Dalai Lama",
+    "El optimismo es la fe que conduce al logro. Nada puede hacerse sin esperanza y confianza. - Helen Keller",
+    "El único límite para tus logros es tu imaginación. - Jamie Paolinetti",
+    "El éxito no se trata de lo que logras, sino de lo que superas en el camino. - Tim Fargo",
+    "No hay atajos para cualquier lugar que valga la pena ir. - Beverly Sills",
+    "La vida es 10% lo que te sucede y 90% cómo reaccionas ante ello. - Charles R. Swindoll",
+    "El secreto de la felicidad no es hacer siempre lo que se quiere, sino querer siempre lo que se hace. - León Tolstói"
+  ];
+  var indice = Math.floor(Math.random() * frases.length);
+  var fraseAleatoria = frases[indice];
+  document.getElementById("frase").innerHTML = fraseAleatoria;
+}
+</script>
+
+<style >
+  
+  p{
+
+    color: white;
+     font-size: 300%;
+     border: 2px solid powderblue;
+     style="background-color:DodgerBlue;"
+
+
+  }
+  h1{
+    color: white;
+
+    font-size: 400%;
+    style="background-color:DodgerBlue;"
+  }
+  .contenedor{
+     background-image: url("fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1500px;
+    width: 2000px;
+    
+
+  }
+
+  
+</style>
+
+
+</head>
+<body class="contenedor">
+</body>
+
+<div >
+  <h1 ><center> Frase motivadora del dia</center></h1>
+
+<center><p  id="frase"> </p></center>
+</div>
+
+</html>
